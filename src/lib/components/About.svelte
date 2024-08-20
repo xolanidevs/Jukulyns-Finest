@@ -58,7 +58,7 @@
     height: auto;
     border-radius: 1rem;
     position: relative;
-    margin-bottom: 3rem;
+    margin-bottom: 10rem;
   }
 
   .about__image-wrap img {
@@ -71,6 +71,7 @@
     left: 0;
     transition: opacity 1s ease-in-out;
     opacity: 0;
+    
   }
 
   .about__image-wrap img.active {
@@ -157,6 +158,7 @@
       height: auto;
       border-radius: 1rem;
       position: relative;
+ 
     }
 
     .about__image-wrap img {

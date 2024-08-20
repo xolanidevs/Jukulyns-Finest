@@ -75,7 +75,7 @@
   }
 
   .hero__content-title {
-    font-size: 1.78rem;
+    font-size: 1.7rem;
     text-align: center;
     margin-top: 4rem;
   }
@@ -132,9 +132,14 @@
     color: var(--clr-light);
   }
 
-  /* Responsive Adjustments */
+  @media (min-width:320px){
+    .hero__content-title {
+      font-size: 1.7831rem;
+    }
 
-  /* Small screens (475px to 639px) */
+ 
+  }
+  
   @media (min-width: 430px) and (max-width: 474px) {
     .hero__content-title {
       font-size: 2.4rem;

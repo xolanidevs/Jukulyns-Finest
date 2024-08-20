@@ -18,7 +18,7 @@
 
 <section id="services" class="services container fade-in">
   <h1 class="services__title title">Services</h1>
-  <h4 class="services__subtitle">Our comprehensive offerings ensure that your project is handled with the utmost expertise and creativity from start to finish. We pride ourselves on our commitment to quality and our ability to bring your vision to life. Our services are divided into four key areas:</h4>
+  <h6 class="services__subtitle">Our comprehensive offerings ensure that your project is handled with the utmost expertise and creativity from start to finish. We pride ourselves on our commitment to quality and our ability to bring your vision to life. Our services are divided into four key areas:</h6>
   
   <div class="service__contentWrap">
     {#each serviceDetails as detail}
@@ -41,14 +41,15 @@
 </section>
 
 <style>
-  /* Base styles for mobile-first design */
+
   .services {
-    position: relative;
-    padding: 2rem 1rem;
-    background: linear-gradient(rgba(11,11,11,.7), rgba(11,11,11,.7));
-    color: var(--clr-light);
-    overflow: hidden;
-  }
+     display: flex;
+     flex-direction: column;
+     gap: 3.5rem;
+     color: var(--clr-light);
+     position: relative;
+     overflow: hidden;
+    }
 
   .services__title{
     font-size: var(--size-4xl);
@@ -80,7 +81,7 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 8px 8px 10px rgba(11, 11, 11, 0.3);
     transition: transform 0.5s ease;
   }
 
@@ -181,10 +182,6 @@
     .services__subtitle {
       max-width: 90ch;
       text-align: center;
-    }
-
-    .services {
-      padding: 4rem 2rem;
     }
 
     .service__contentWrap {

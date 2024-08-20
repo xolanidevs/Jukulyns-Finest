@@ -65,19 +65,20 @@
 </section>
 
 <style>
-  /* Mobile-first styles */
+
 section {
   overflow: hidden;
 }
 
 .pricings__title {
   text-align: center;
-  margin-bottom: 2rem; /* Adjusted for mobile view */
+  margin-bottom: 2rem; 
+  font-size: var(--size-4xl);
 }
 
 .pricings__subtitle {
-  margin-bottom: 1.5rem; /* Adjusted for mobile view */
-  max-width: 90%; /* Adjusted for mobile view */
+  margin-bottom: 1.5rem; 
+  max-width: 90%; 
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -85,28 +86,28 @@ section {
 
 .pricing__container {
   background-color: var(--clr-slate200);
-  padding: 20px; /* Adjusted for mobile view */
-  border-radius: 15px; /* Adjusted for mobile view */
+  padding: 20px;
+  border-radius: 15px; 
   color: #052D23;
 }
 
 .pricings__content-container {
   font-family: 'Clash Display', sans-serif;
-  display: block; /* Stack items on mobile */
+  display: block; 
   gap: 1rem;
 }
 
 .pricings__content {
   background-color: #f9f9f9;
-  padding: 15px; /* Adjusted for mobile view */
-  border-radius: 15px; /* Adjusted for mobile view */
+  padding: 15px; 
+  border-radius: 15px; 
   border: 1px solid #052D23;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjusted for mobile view */
-  margin-bottom: 1rem; /* Adjusted for mobile view */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 1rem; 
 }
 
 .pricings__content ul {
-  padding-left: 10px; /* Adjusted for mobile view */
+  padding-left: 10px; 
 }
 
 .pricings__content ul li {
@@ -114,8 +115,8 @@ section {
 }
 
 .pricings__content-title {
-  font-size: 1.25rem; /* Adjusted for mobile view */
-  margin-bottom: 0.5rem; /* Adjusted for mobile view */
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem; 
 }
 
 .pricings__content-description {
@@ -129,21 +130,20 @@ section {
 
 .pricings__content-price {
   font-weight: bold;
-  font-size: 1rem; /* Adjusted for mobile view */
-  margin-bottom: 1rem; /* Adjusted for mobile view */
-  margin-top: 1rem; /* Adjusted for mobile view */
+  font-size: 1rem; 
+  margin-bottom: 1rem; 
 }
 
 .pricings__btn {
   background-color: #052D23;
   color: #fff;
   border: none;
-  padding: 8px 16px; /* Adjusted for mobile view */
-  border-radius: 15px; /* Adjusted for mobile view */
+  padding: 8px 16px;
+  border-radius: 15px; 
   cursor: pointer;
   transition: background-color 0.3s ease;
   display: block;
-  margin: 0.5rem auto; /* Adjusted for mobile view */
+  margin: 0.5rem auto; 
 }
 
 .pricings__btn:hover {
@@ -152,12 +152,12 @@ section {
 
 .pricings__btn1 {
   display: none;
-  position: static; /* Move button inside content block for mobile */
+  position: static;
   background-color: #ffc107;
   color: #fff;
   border: none;
   padding: 5px 10px;
-  border-radius: 15px; /* Adjusted for mobile view */
+  border-radius: 15px; 
 }
 
 /* .pricings__btn2 {
@@ -193,8 +193,8 @@ section {
   }
 
   .pricings__content-container {
-    display: flex; /* Flex layout for larger screens */
-    flex-wrap: wrap; /* Allow wrapping */
+    display: flex; 
+    flex-wrap: wrap; 
     gap: 1rem;
   }
 
