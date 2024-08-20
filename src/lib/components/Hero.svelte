@@ -201,7 +201,6 @@
     }
   }
 
-  /* Large screens (768px to 1023px) */
   @media (min-width: 768px) and (max-width: 1023px) {
     .hero__content-title {
       font-size: 4.41rem;
@@ -226,46 +225,17 @@
     }
   }
 
-  /* Extra-large screens (1024px to 1279px) */
-  @media (min-width: 1024px) and (max-width: 1279px) {
-  .hero__content-title {
-    font-size: 7rem;
-    text-align: center;
-    margin-top: 7rem;
-  }
 
-  .hero__content-container {
-    gap: 4rem;
-    margin-top: 2rem;
-  }
-
-  .hero__content-description {
-    font-size: var(--size-base);
-  }
-
-  .hero-contact__btn {
-    font-weight: bold;
-    padding: 1.5rem 2rem;
-  }
-
-  :global(body.light-mode) .hero-contact__btn::before {
-    background: var(--clr-dark);
-  }
-
-  :global(body.light-mode) .hero-contact__btn:hover {
-    color: var(--clr-light);
-  }
-  }
-
-  /* 1280px and up (xl) */
-  @media (min-width: 1280px) {
+  @media (min-width: 1024px) and (max-width:2559px){
     .hero__content-title {
    
-      margin-top: 10rem;
+      font-size: 5.93rem;
+      text-align: center;
+      margin-top: 7rem;
     }
 
     .hero__content-description {
-      font-size: 2rem;
+      font-size: 1rem;
     }
 
     .hero-contact__btn {
@@ -276,17 +246,34 @@
       width: 4.5rem;
       height: 4.5rem;
     }
+
+    
+    :global(body.light-mode) .hero-contact__btn::before {
+      background: var(--clr-dark);
+    }
+
+    :global(body.light-mode) .hero-contact__btn:hover {
+      color: var(--clr-light);
+    }
   }
 
-  /* 1536px and up (2xl) */
-  @media (min-width: 1536px) {
+
+  @media (min-width: 2560px) {
+
+    .hero{
+      gap: 5rem;
+    }
+
+    .hero__content-container{
+      gap: 3rem;
+    }
+
     .hero__content-title {
- 
-      margin-top: 12rem;
+      font-size: 14.95rem;
     }
 
     .hero__content-description {
-      font-size: 2.2rem;
+      font-size: 3.2rem;
     }
 
     .hero-contact__btn {

@@ -1,8 +1,9 @@
 <script>
   import { goto } from '$app/navigation';
 
+  // @ts-ignore
   function selectPackage(packageName) {
-s
+
     alert(`You selected the ${packageName} package!`);
 
   }
@@ -159,16 +160,16 @@ section {
   border-radius: 15px; /* Adjusted for mobile view */
 }
 
-.pricings__btn2 {
-  margin-top: 1rem; /* Adjusted for mobile view */
+/* .pricings__btn2 {
+  margin-top: 1rem; 
   text-decoration: underline;
-  font-size: 1rem; /* Adjusted for mobile view */
+  font-size: 1rem; 
   display: block;
-  margin: 1rem auto; /* Adjusted for mobile view */
+  margin: 1rem auto; 
   background: none;
   border: none;
   cursor: pointer;
-}
+} */
 
 .notAvailable {
   text-decoration: line-through;
@@ -224,10 +225,10 @@ section {
     right: 5%;
   }
 
-  .pricings__btn2 {
+  /* .pricings__btn2 {
     margin-top: 2rem;
     font-size: var(--size-base);
-  }
+  } */
 }
 
 /* Desktop screens */

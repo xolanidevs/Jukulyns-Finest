@@ -83,9 +83,11 @@
     </div> -->
 
     <!-- Burger Icon Toggle -->
-    <div class="menu-toggle" on:click={toggleMenu}>
-      <i class={isMenuOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i>
-    </div>
+    <div class="menu-toggle">
+      <button  on:click={toggleMenu}>
+        <i class={isMenuOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars"}></i>
+      </button>
+    </div> 
   </nav>
 </header>
 
@@ -171,19 +173,17 @@
     transition: color 0.3s;
   }
 
-  .header__nav-link a:hover {
-    
-  }
+ 
 
   /* Dark Mode Toggle */
-  .darkLight {
+  /* .darkLight {
     cursor: pointer;
   }
 
   .darkLight i {
     color: white;
     font-size: 1.5rem;
-  }
+  } */
 
   /* Burger Icon */
   .menu-toggle {
@@ -197,11 +197,11 @@
   }
 
   /* Background overlay when menu is open */
-  .menu-open body {
+  /* .menu-open body {
     background: rgba(22, 22, 22, .5);
     backdrop-filter: blur(10px);
     overflow: hidden; 
-  }
+  } */
 
   /* Medium screens and up */
   @media (min-width: 640px) {
@@ -217,9 +217,9 @@
       font-size: 1.2rem;
     }
 
-    .darkLight i, .menu-toggle i {
+    /* .darkLight i, .menu-toggle i {
       font-size: 1.8rem;
-    }
+    } */
   }
 
   /* Large screens and up */

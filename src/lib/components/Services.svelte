@@ -18,7 +18,6 @@
 
 <section id="services" class="services container fade-in">
   <h1 class="services__title title">Services</h1>
-  <img class="j" src="j2.svg" alt="">
   <h4 class="services__subtitle">Our comprehensive offerings ensure that your project is handled with the utmost expertise and creativity from start to finish. We pride ourselves on our commitment to quality and our ability to bring your vision to life. Our services are divided into four key areas:</h4>
   
   <div class="service__contentWrap">

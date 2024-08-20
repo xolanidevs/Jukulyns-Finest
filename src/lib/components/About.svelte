@@ -99,14 +99,14 @@
     color: rgb(247, 0, 0);
   }
 
-  .read-more {
+  /* .read-more {
     text-decoration: underline;
     transition: opacity 0.3s;
   }
 
   .read-more:hover {
     opacity: 0.5;
-  }
+  } */
 
   /* Breakpoints for larger screens */
   @media (min-width: 640px) {
