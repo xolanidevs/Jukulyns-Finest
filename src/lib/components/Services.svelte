@@ -1,10 +1,10 @@
 <script>
-  const services = [
-    { title: "Pre-Production", id: 1 },
-    { title: "Production", id: 2 },
-    { title: "Post-Production", id: 3 },
-    { title: "Equipment rental", id: 4 }
-  ];
+  // const services = [
+  //   { title: "Pre-Production", id: 1 },
+  //   { title: "Production", id: 2 },
+  //   { title: "Post-Production", id: 3 },
+  //   { title: "Equipment rental", id: 4 }
+  // ];
 
   const serviceDetails = [
   { title: "Photography", icon: "fa-solid fa-camera", items: ["Product Photography", "Event Photography", "Lifestyle Photography"] },
@@ -36,7 +36,7 @@
       </div>
     {/each}
     <div class="cta-button">
-      <a href="#" class="cta-link">Hire Us!</a>
+      <a href="#contact" class="cta-link">Hire Us!</a>
     </div>
   </div>
 </section>

@@ -7,10 +7,10 @@ s
 
   }
 
-  function bookCall() {
+  // function bookCall() {
 
-    goto('/Contact');
-  }
+  //   goto('/Contact');
+  // }
 </script>
 
 <section id="pricings" class="pricings container fade-in">
@@ -59,7 +59,7 @@ s
         <button class="pricings__btn" on:click={() => selectPackage('Gold')}>Select Package</button>
       </article>
     </div>
-    <button class="pricings__btn2" on:click={bookCall}>Book A Call</button>
+    <!-- <button class="pricings__btn2" on:click={bookCall}>Book A Call</button> -->
   </div>
 </section>
 

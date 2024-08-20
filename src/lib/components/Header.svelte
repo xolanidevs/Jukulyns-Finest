@@ -45,6 +45,14 @@
       </a>
     </div>
 
+    <ul class="header__nav-menuDesktop">
+      <li class="header__nav-linkDesktop"><a href="#hero">Home</a></li>
+      <li class="header__nav-linkDesktop"><a href="#about">About</a></li>
+      <li class="header__nav-linkDesktop"><a href="#services">Services</a></li>
+      <li class="header__nav-linkDesktop"><a href="#pricing">Pricings</a></li>
+      <li class="header__nav-linkDesktop"><a href="#contact">Contact</a></li>
+    </ul>
+
     <!-- Burger Menu -->
     <ul class="header__nav-menu" class:open={isMenuOpen}>
       <li class="header__nav-link"><a href="#hero" on:click={toggleMenu}>Home</a></li>
@@ -104,8 +112,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
   }
 
+  .header__nav-menuDesktop{
+    display: none;
+  }
+  
   .logo {
     font-size: .5rem;
 
@@ -134,10 +147,11 @@
     z-index: 999;
     display: flex;
     flex-direction: column;
-
+    
     align-items: center;
     gap: 1.5rem;
   }
+  
 
   .header__nav-menu.open {
     transform: translateX(0);
@@ -147,6 +161,8 @@
   .header__nav-link {
     font-size: 1rem;
     text-transform: uppercase;
+  
+    transform: translateY(600%);
   }
 
   .header__nav-link a {
@@ -221,11 +237,46 @@
   /* Extra large screens */
   @media (min-width: 1024px) {
 
-    .header__nav-link {
+    .header__nav-linkDesktop {
       font-size: .8rem;
     }
 
-    .header__nav-menu {
+    .header__nav-menuDesktop{
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      text-transform: uppercase;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+    }
+
+    .header__nav-linkDesktop {
+      position: relative;
+      display: inline-block;
+    }
+
+    .header__nav-linkDesktop::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 1px;
+      bottom: -2px; 
+      left: 50%;
+      background-color: white; 
+      transform: translateX(-50%);
+      transition: width 0.3s ease;
+    }
+
+    .header__nav-linkDesktop:hover::after {
+      width: 100%;
+    }
+
+   
+
+    /* .header__nav-menu {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -239,7 +290,8 @@
       padding-top: 0;
       z-index: auto;
       display: flex;
-    }
+      display: none;
+    } */
 
    .logo, .header__socials{
     align-items: center;
@@ -258,8 +310,8 @@
       display: none;
     }
 
-    .darkLight i {
+    /* .darkLight i {
       font-size: 2rem;
-    }
+    } */
   }
 </style>
