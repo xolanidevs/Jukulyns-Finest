@@ -1,0 +1,76 @@
+:root{
+  /*-- Color --*/
+  --clr-dark:#161616;
+  --clr-light:#f1f5f9;
+  --clr-slate200:#e2e8f0;
+  --clr-green:#052D23;
+  --clr-gray:#d4d4d4;
+
+  /*-- Sizes --*/
+   --size-xxs:	 0.5rem; /* 8px */
+    --size-xs	: 0.75rem; /* 12px */
+    --size-sm: 0.875rem; /* 14px */
+    --size-base: 1rem; /* 16px */
+    --size-lg: 1.25rem; /* 20px */
+    --size-xl: 1.5rem; /* 24px */
+    --size-2xl: 1.75rem; /* 28px */
+    --size-3xl : 2rem; /* 32px */
+    --size-4xl: 2.25rem; /* 36px */
+    --size--5xl: 2.5rem; /* 40px */
+    --size-6xl: 2.75rem; /* 44px */
+    --size-7xl: 3rem; /* 48px */
+    --size-8xl: 3.5rem; /* 56px */
+    --size-9xl: 4rem; /* 64px */
+    --size-10xl: 6rem; 
+    --size-11xl: 7.25rem; 
+    --size-12xl: 8rem; 
+    --size-13xl: 10rem; 
+    --size-auto:	auto;
+}
+*{
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-light);
+  transition: color .3s;
+}
+
+/* a:hover {
+  color: var(--clr-green);
+} */
+
+.logo{
+  cursor: pointer;
+}
+
+image,
+video,
+picture,
+canvas,
+svg{
+  user-select: none;
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+  
+}
