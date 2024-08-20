@@ -36,13 +36,13 @@
   <h1 class="contact__title title">Contact Us</h1>
   <form class="contact__form" on:submit={handleSubmit}>
     <label for="name">Name <span style="color: red;">*</span></label>
-    <input type="text" id="name" name="name" placeholder="Name" bind:value={name} required>
+    <input type="text" id="name" name="name" bind:value={name} required>
     <label for="email">Email <span style="color: red;">*</span></label>
-    <input type="email" id="email" name="email" placeholder="example123@gmail.com" bind:value={email} required>
+    <input type="email" id="email" name="email" bind:value={email} required>
     <label for="contactNumber">Contact numbers <span style="color: red;">*</span></label>
     <input type="text" id="contactNumber" name="contactNumber" placeholder="012 324 6789" bind:value={contactNumber} required>
     <label for="message">Message</label>
-    <textarea id="message" name="message" rows="4" placeholder="TELL US ABOUT YOUR QUERY." bind:value={message}></textarea>
+    <textarea id="message" name="message" rows="4" placeholder="Singakunceda ngani?" bind:value={message}></textarea>
     <button type="submit" disabled={sending}>Submit</button>
     {#if sending}
       <p>Sending...</p>
