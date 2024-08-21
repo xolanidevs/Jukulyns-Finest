@@ -49,7 +49,7 @@
       <li class="header__nav-linkDesktop"><a href="#hero">Home</a></li>
       <li class="header__nav-linkDesktop"><a href="#about">About</a></li>
       <li class="header__nav-linkDesktop"><a href="#services">Services</a></li>
-      <li class="header__nav-linkDesktop"><a href="#pricing">Pricings</a></li>
+      <li class="header__nav-linkDesktop"><a href="#pricings">Pricings</a></li>
       <li class="header__nav-linkDesktop"><a href="#contact">Contact</a></li>
     </ul>
 
@@ -58,7 +58,7 @@
       <li class="header__nav-link"><a href="#hero" on:click={toggleMenu}>Home</a></li>
       <li class="header__nav-link"><a href="#about" on:click={toggleMenu}>About</a></li>
       <li class="header__nav-link"><a href="#services" on:click={toggleMenu}>Services</a></li>
-      <li class="header__nav-link"><a href="#pricing" on:click={toggleMenu}>Pricings</a></li>
+      <li class="header__nav-link"><a href="#pricings" on:click={toggleMenu}>Pricings</a></li>
       <li class="header__nav-link"><a href="#contact" on:click={toggleMenu}>Contact</a></li>
     </ul>
     
