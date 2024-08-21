@@ -99,6 +99,7 @@
   padding: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 4px;
+  outline: none;
 }
 
 .contact__form button {

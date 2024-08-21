@@ -196,7 +196,7 @@
 
   @media (min-width: 1440px) {
     .services__title {
-      font-size: var(--size-5xl);
+      font-size: var(--size-10xl);
     }
 
     .services__subtitle {

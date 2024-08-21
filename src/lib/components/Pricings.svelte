@@ -233,7 +233,9 @@ section {
 
 /* Desktop screens */
 @media (min-width: 1024px) {
-
+  .pricings__title{
+    font-size: var(--size-10xl);
+  }
 }
 
 </style>

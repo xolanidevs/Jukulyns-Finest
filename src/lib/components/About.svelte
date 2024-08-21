@@ -122,12 +122,20 @@
   }
 
   @media (min-width: 768px) {
+
+
     .about__title {
       font-size: var(--size-8xl);
     }
 
     .about__image-wrap img {
       height: 350px;
+      /* margin-bottom: 15rem; */
+    }
+
+    .about__image-wrap {
+     
+      margin-bottom: 15rem;
     }
 
     .about__description {
@@ -163,7 +171,7 @@
 
     .about__image-wrap img {
       width: 100%;
-      height: 100%;
+      /* height: 100%; */
       border-radius: 1rem;
       object-fit: cover;
       position: absolute;
@@ -199,7 +207,7 @@
 
   @media (min-width: 1440px) {
     .about__title {
-      font-size: var(--size-12xl);
+      font-size: var(--size-10xl);
     }
 
  
@@ -207,9 +215,5 @@
       font-size: var(--size-base);
     }
 
-    .about__image-wrap img {
-      width: 100%;
-      height: 100%;
-    }
   }
 </style>

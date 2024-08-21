@@ -276,11 +276,11 @@
     }
 
     .hero__content-title {
-      font-size: 14.95rem;
+      font-size: 14.5rem;
     }
 
     .hero__content-description {
-      font-size: 3.2rem;
+      font-size: 2.7rem;
     }
 
     .hero-contact__btn {
