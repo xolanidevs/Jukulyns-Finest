@@ -202,10 +202,7 @@
       font-size: var(--size-12xl);
     }
 
-    .about__image-wrap img {
-      height: 450px;
-    }
-
+ 
     .about__description {
       font-size: var(--size-base);
     }

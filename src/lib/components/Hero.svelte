@@ -97,13 +97,15 @@
     padding: 1rem 1.5rem;
     border-radius: 30px;
     cursor: pointer;
-    transition: color 0.3s linear;
+    transition: color 0.3s linear, background .3s linear;
   }
 
   .hero-contact__btn:hover {
     color: var(--clr-dark);
+    background: white;
   }
 
+ 
 
 
   .hero__scroll-down {
@@ -244,7 +246,7 @@
     }
 
     .hero-contact__btn {
-      padding: 2rem 3rem;
+      padding: 1.5rem 3rem;
     }
 
     .hero__scroll-down {
@@ -282,7 +284,7 @@
     }
 
     .hero-contact__btn {
-      padding: 2.5rem 5rem;
+      padding: 2rem 3.5rem;
     }
 
     .hero__scroll-down {
