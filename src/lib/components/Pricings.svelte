@@ -1,68 +1,94 @@
 <script>
-  import { goto } from '$app/navigation';
 
-  // @ts-ignore
-  function selectPackage(packageName) {
+  import { loadStripe } from '@stripe/stripe-js';
 
-    alert(`You selected the ${packageName} package!`);
+   // Initialize Stripe with  public key
+   const stripePromise = loadStripe('pk_test_51PqGjB02EN0NWbe5HFvEIfWfkhN6veElCbfnKTs4rflYr6p8Hy0deNyVYuZbKnVN66kqJWW5S5iMZDNrINqDO9sb00TdUfkn4e');
 
+
+    // @ts-ignore
+    async function handleCheckout(priceId) {
+    const stripe = await stripePromise;
+
+    // @ts-ignore
+    const { error } = await stripe.redirectToCheckout({
+      lineItems: [{ price: priceId, quantity: 1 }],
+      mode: 'payment',
+      successUrl: `${window.location.origin}/success`, 
+      cancelUrl: `${window.location.origin}/canceled`  
+    });
+
+    if (error) {
+      console.error('Stripe Checkout error:', error);
+      // Handle error in redirect
+    }
   }
 
-  // function bookCall() {
-
-  //   goto('/Contact');
-  // }
 </script>
 
 <section id="pricings" class="pricings container fade-in">
   <h1 class="pricings__title title">Pricings</h1>
   <div class="pricing__container">
-    <h4 class="pricings__subtitle">For clients looking to book us for only 1 service for the day i.e (Photography or Videography), we charge an hourly rate of R1400 per photoshoot/videoshoot an event.</h4>
+    <h4 class="pricings__subtitle">
+      For clients looking to book us for only 1 service for the day i.e (Photography or Videography), we charge an hourly rate of R1400 per photoshoot/videoshoot an event.
+    </h4>
     <div class="pricings__content-container">
       <article class="pricings__content">
         <h2 class="pricings__content-title">Bronze Package</h2>
         <p class="package-discription">This package is ideal for events</p>
-        <ul class="pricings__content-description">
-          <li>Photography</li>
-          <li>Videography</li>
-          <li class="notAvailable">Editing</li>
-          <li class="notAvailable">Content Creation</li>
-          <li class="notAvailable">Directing</li>
-        </ul>
+        <span class="pricings__content-description">
+          <ul>
+            <li>Photography</li>
+            <li>Videography</li>
+            <li class="notAvailable">Editing</li>
+            <li class="notAvailable">Content Creation</li>
+            <li class="notAvailable">Directing</li>
+          </ul>
+        </span>
         <p class="pricings__content-price">R3000</p>
-        <button class="pricings__btn" on:click={() => selectPackage('Bronze')}>Select Package</button>
+        <!-- Button that triggers Stripe Checkout -->
+        <button class="pricings__btn" on:click={() => handleCheckout('price_1PqHAj02EN0NWbe5LRcokiNK')}>Select Package</button>
       </article>
+
       <article class="pricings__content">
         <h2 class="pricings__content-title">Silver Package</h2>
         <button class="pricings__btn1">Popular</button>
         <p class="package-discription">This ideal is suitable for mid-sized projects</p>
-        <ul class="pricings__content-description">
-          <li>Photography</li>
-          <li>Videography</li>
-          <li>Editing</li>
-          <li class="notAvailable">Content Creation</li>
-          <li class="notAvailable">Directing</li>
-        </ul>
+        <span class="pricings__content-description">
+          <ul>
+            <li>Photography</li>
+            <li>Videography</li>
+            <li>Editing</li>
+            <li class="notAvailable">Content Creation</li>
+            <li class="notAvailable">Directing</li>
+          </ul>
+        </span>
         <p class="pricings__content-price">R5500</p>
-        <button class="pricings__btn" on:click={() => selectPackage('Silver')}>Select Package</button>
+        <!-- Button that triggers Stripe Checkout -->
+        <button class="pricings__btn" on:click={() => handleCheckout('price_1PqHhU02EN0NWbe5idQqyfeG')}>Select Package</button>
       </article>
+
       <article class="pricings__content">
         <h2 class="pricings__content-titleGold">Gold Package</h2>
         <p class="package-discription">Ideal for businesses and big projects</p>
-        <ul class="pricings__content-description">
-          <li>Photography</li>
-          <li>Videography</li>
-          <li>Editing</li>
-          <li>Content Creation</li>
-          <li>Directing</li>
-        </ul>
+        <span class="pricings__content-description">
+          <ul>
+            <li>Photography</li>
+            <li>Videography</li>
+            <li>Editing</li>
+            <li>Content Creation</li>
+            <li>Directing</li>
+          </ul>
+        </span>
         <p class="pricings__content-price">R10000</p>
-        <button class="pricings__btn" on:click={() => selectPackage('Gold')}>Select Package</button>
+        <!-- Button that triggers Stripe Checkout -->
+        <button class="pricings__btn" on:click={() => handleCheckout('price_1PqHki02EN0NWbe5ko5kcHjo')}>Select Package</button>
       </article>
     </div>
-    <!-- <button class="pricings__btn2" on:click={bookCall}>Book A Call</button> -->
+    <!-- <button class="pricings__btn2">Book A Call</button> -->
   </div>
 </section>
+
 
 <style>
 

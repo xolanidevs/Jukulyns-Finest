@@ -293,7 +293,7 @@
       display: none;
     } */
 
-   .logo, .header__socials{
+   .logo, .header__socials,.header__nav-linkDesktop{
     align-items: center;
     justify-content: center;
     vertical-align: middle;

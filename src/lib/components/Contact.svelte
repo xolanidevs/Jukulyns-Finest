@@ -11,6 +11,7 @@
   let success = false;
   let error = '';
 
+  // @ts-ignore
   async function handleSubmit(event) {
     event.preventDefault();
     sending = true;
@@ -40,7 +41,7 @@
     <label for="email">Email <span style="color: red;">*</span></label>
     <input type="email" id="email" name="email" bind:value={email} required>
     <label for="contactNumber">Contact numbers <span style="color: red;">*</span></label>
-    <input type="text" id="contactNumber" name="contactNumber" placeholder="012 324 6789" bind:value={contactNumber} required>
+    <input type="text" id="contactNumber" name="contactNumber" bind:value={contactNumber} required>
     <label for="message">Message</label>
     <textarea id="message" name="message" rows="4" placeholder="Singakunceda ngani?" bind:value={message}></textarea>
     <button type="submit" disabled={sending}>Submit</button>
