@@ -244,7 +244,7 @@
     }
 
     .hero-contact__btn {
-      padding: 2.2rem 4rem;
+      padding: 2rem 3rem;
     }
 
     .hero__scroll-down {
