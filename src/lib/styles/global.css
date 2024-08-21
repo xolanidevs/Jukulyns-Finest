@@ -1,6 +1,7 @@
 :root{
   /*-- Color --*/
-  --clr-dark:#161616;
+  /* --clr-dark:#161616; */
+  --clr-dark:#1D1D1D;
   --clr-light:#f1f5f9;
   --clr-slate200:#e2e8f0;
   --clr-green:#052D23;
