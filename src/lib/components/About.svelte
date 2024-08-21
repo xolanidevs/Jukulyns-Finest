@@ -206,5 +206,10 @@
     .about__description {
       font-size: var(--size-base);
     }
+
+    .about__image-wrap img {
+      width: 100%;
+      height: 100%;
+    }
   }
 </style>
