@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
 
+  // @ts-ignore
   let images = [];
   let currentIndex = 0;
 
@@ -13,8 +14,10 @@
   });
 
   function shuffleImages() {
+    // @ts-ignore
     images[currentIndex].classList.remove('active');
     currentIndex = (currentIndex + 1) % images.length;
+    // @ts-ignore
     images[currentIndex].classList.add('active');
   }
 </script>
