@@ -94,7 +94,7 @@
 <style>
   /* Mobile First Styles */
   header {
-    height: 12vh;
+    height: 11vh;
     width: 100%;
     position: fixed;
     top: 0;
@@ -102,12 +102,13 @@
     transform: translateX(-50%);
     padding: 1rem 2rem;
     z-index: 1000;
-    transition: background .3s ease, backdrop-filter .3s ease;
+    transition: background .3s ease, backdrop-filter .3s ease ;
   }
 
   header.scrolled {
     background: rgba(22, 22, 22, .5);
     backdrop-filter: blur(10px);
+    border-bottom: 1px dotted rgba(22, 22, 22, .4);
   }
 
   nav {

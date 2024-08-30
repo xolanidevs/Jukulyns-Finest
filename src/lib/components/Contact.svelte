@@ -92,15 +92,21 @@
 }
 
 .contact__form label {
-  font-weight: bold;
+  /* font-weight: bold; */
+  color: #333;
 }
 
 .contact__form input,
 .contact__form textarea {
   padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border-bottom: 1px solid var(--clr-dark);
+  /* border-radius: 4px; */
   outline: none;
+}
+
+textarea{
+  border: none;
+  background: none;
 }
 
 .contact__form button {
@@ -136,6 +142,11 @@
 
 .contact__alternative a:hover {
   text-decoration: underline;
+}
+
+input{
+  border: none;
+  background: none;
 }
 
 @media (max-width:768px){
