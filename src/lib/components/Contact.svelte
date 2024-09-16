@@ -84,7 +84,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background-color: var(--clr-slate200);
+  /* background-color: var(--clr-slate200); */
   padding: 2rem;
   border-radius: 8px;
   margin-bottom: 1rem;
@@ -93,15 +93,17 @@
 
 .contact__form label {
   /* font-weight: bold; */
-  color: #333;
+  /* color: #333; */
+  color: var(--clr-slate200);
 }
 
 .contact__form input,
 .contact__form textarea {
   padding: 0.5rem;
-  border-bottom: 1px solid var(--clr-dark);
+  border-bottom: 1px solid var(--clr-slate200);
   /* border-radius: 4px; */
   outline: none;
+  caret-color: var(--clr-slate200);
 }
 
 textarea{
